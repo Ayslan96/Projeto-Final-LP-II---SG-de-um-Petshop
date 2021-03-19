@@ -4,7 +4,7 @@ import java.util.Calendar;
 public class Anfibio extends Animal{
 	
 	int totalDeMudas;
-	Calendar ultimaMuda;
+	Calendar ultimaMudaa;
 	
 	public int getTotalDeMudas() {
 		return totalDeMudas;
@@ -13,10 +13,10 @@ public class Anfibio extends Animal{
 		this.totalDeMudas = totalDeMudas;
 	}
 	public Calendar getUltimaMuda() {
-		return ultimaMuda;
+		return ultimaMudaa;
 	}
 	public void setUltimaMuda(Calendar ultimaMuda) {
-		this.ultimaMuda = ultimaMuda;
+		this.ultimaMudaa = ultimaMuda;
 	}
 	
 	
