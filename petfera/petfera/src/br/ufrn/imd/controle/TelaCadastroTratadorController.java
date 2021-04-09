@@ -2,8 +2,8 @@ package br.ufrn.imd.controle;
 
 import java.util.Date;
 
-import br.ufrn.imd.controle.FuncionariosDAO;
 import br.ufrn.imd.dao.Banco;
+import br.ufrn.imd.dao.FuncionariosDAO;
 import br.ufrn.imd.modelo.Tratador;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
