@@ -303,7 +303,7 @@ public class TelaPrincipalPetferaController {
 
     @FXML
     void sairApp(ActionEvent event) {
-    	
+    	System.exit(0);
     }
 
 }

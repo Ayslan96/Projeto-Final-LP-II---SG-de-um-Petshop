@@ -22,7 +22,7 @@ public class TelaCadastroAveExoticaController {
 
     @FXML
     void fecharApp(ActionEvent event) {
-
+    	aveStage.close();
     }
 
 	public void setClienteStage(Stage aveStage) {

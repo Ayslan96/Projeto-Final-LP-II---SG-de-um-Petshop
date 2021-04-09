@@ -1,5 +1,6 @@
 package br.ufrn.imd.controle;
 
+import br.ufrn.imd.dao.Banco;
 import br.ufrn.imd.modelo.*;
 
 import java.util.ArrayList;
@@ -11,6 +12,13 @@ public class FuncionariosDAO {
 	public FuncionariosDAO()
 	{
 		funcionarios = new ArrayList<Funcionario>();
+	}
+	
+	public static FuncionariosDAO getInstance() {
+		if (FuncionariosDAO == null) {
+			banco = new Banco();
+		}
+		return banco;
 	}
 	
 	public void adicionarFuncionario(Funcionario F) {
