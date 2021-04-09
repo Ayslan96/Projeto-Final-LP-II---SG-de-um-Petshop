@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="403.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.controle.TelaListarFuncionariosController">
+	   <children>
+      <TextArea layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="571.0" />
+   </children>
+</AnchorPane>

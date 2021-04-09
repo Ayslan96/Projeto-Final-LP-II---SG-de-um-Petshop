@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="406.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.controle.TelaPrincipalPetferaController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <ImageView cache="true" cacheHint="QUALITY" depthTest="DISABLE" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" smooth="true">
+               <image>
+                  <Image url="@LOGO.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DESENVOLVIDO POR: " />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="AYSLAN CÂMARA E BRUNA BARBOSA " />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" text="Cadastro Animal">
+              <items>
+                  <MenuItem fx:id="mnitemCadastroAnfibioExotico" mnemonicParsing="false" onAction="#abrirCadastroAnfibioExotico" text="Anfíbio Exótico" />
+                <MenuItem fx:id="mnitemCadastroAnfibioNativo" mnemonicParsing="false" onAction="#abrirCadastroAnfibioNativo" text="Anfíbio Nativo" />
+                  <MenuItem fx:id="mnitemCadastroAveExotica" mnemonicParsing="false" onAction="#abrirCadastroAveExotica" text="Ave Exótica" />
+                  <MenuItem fx:id="mnitemCadastroAveNativa" mnemonicParsing="false" onAction="#abrirCadastroAveNativa" text="Ave Nativa" />
+                  <MenuItem fx:id="mnitemCadastroMamiferoExotico" mnemonicParsing="false" onAction="#abrirCadastroMamiferoExotico" text="Mamífero Exótico" />
+                  <MenuItem fx:id="mnitemCadastroMamiferoNativo" mnemonicParsing="false" onAction="#abrirCadastroMamiferoNativo" text="Mamífero Nativo" />
+                  <MenuItem fx:id="mnitemCadastroReptilExotico" mnemonicParsing="false" onAction="#abrirCadastroReptilExotico" text="Réptil Exótico" />
+                  <MenuItem fx:id="mnitemCadastroReptilNativo" mnemonicParsing="false" onAction="#abrirCadastroReptilNativo" text="Réptil Nativo" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Cadastro Funcionário">
+            <items>
+              <MenuItem fx:id="mnitemCadastroTratador" mnemonicParsing="false" onAction="#abrirCadastroTratador" text="Tratador" />
+                  <MenuItem fx:id="mnitemCadastroVeterinario" mnemonicParsing="false" onAction="#abrirCadastroVeterinario" text="Veterinário" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Relatórios">
+            <items>
+              <MenuItem fx:id="mnintemRelatorioFuncionarios" mnemonicParsing="false" onAction="#abrirRelatrorioFuncionarios" text="Funcionários" />
+                  <MenuItem fx:id="mnitemRelatorioAnimais" mnemonicParsing="false" onAction="#abrirRelatorioAnimais" text="Animais" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Sair">
+            <items>
+              <MenuItem fx:id="mnitemSair" mnemonicParsing="false" onAction="#sairApp" text="Sair" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
