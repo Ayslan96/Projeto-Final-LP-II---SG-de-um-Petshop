@@ -40,7 +40,7 @@ public class FuncionariosDAO {
 		teste.setCpf("04568563203");
 		teste.setIdade(25);
 		teste.setTipoSanguineo("A");
-		teste.setFatorRH('+');
+		teste.setFatorRH("+");
 		teste.setEspecialidade("doguinhos");
 		teste.setNivelDeSegurança(0);
 		

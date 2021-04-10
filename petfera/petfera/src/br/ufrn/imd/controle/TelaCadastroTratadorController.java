@@ -2,7 +2,7 @@ package br.ufrn.imd.controle;
 
 import java.util.Date;
 
-import br.ufrn.imd.dao.Banco;
+import br.ufrn.imd.dao.*;
 import br.ufrn.imd.dao.FuncionariosDAO;
 import br.ufrn.imd.modelo.Tratador;
 import javafx.event.ActionEvent;
@@ -16,7 +16,7 @@ public class TelaCadastroTratadorController {
 	private Stage tratador;
 	private boolean btnCadastrarClicked = false;
 	
-	FuncionariosDAO bc;
+	Petfera petfera;
 
 	
 	 @FXML
@@ -66,28 +66,36 @@ public class TelaCadastroTratadorController {
     	
     	if (btnCadastrarClicked){
     		// Pegar os dados de Cliente
-    		bc = FuncionariosDAO.getInstance();
+    		petfera = Petfera.getInstance();
     		
     		// buscando último cliente
-    		int cod = bc.buscaCodigoCliente();
+    		int cod = petfera.buscaCodigoFuncionario();
     		cod++;
     		
     		// setar atributos Cliente
-    		Cliente c = new Cliente();
-    		c.setIdCliente(cod);
     		
-    		c.setNomeCliente(tfNomeCliente.getText());
+    		Tratador f = new Tratador();
     		
-    		c.setCpf(tfCPFCliente.getText());
+    		f.setId(cod);
     		
-    		// pegar a data do DatePicker
-    		Date data = new Date(dtPickerDtNasCliente.getValue().toEpochDay());
-    		c.setDataNascimento(data);
+    		f.setNome(tNome.getText());
+    		
+    		f.setCpf(tCpf.getText());
+    		
+    		f.setIdade(Integer.parseInt(tIdade.getText()));
+    		
+    		f.setTipoSanguineo(tSangue.getText());
+    		
+    		f.setFatorRH(tRh.getText());
+    		
+    		f.setEspecialidade(tEspecialidade.getText());
+    		
+    		f.setNivelDeSegurança(Integer.parseInt(tNSegurança.getText()));
     		
     		// persistir dados
-    		bc.inserirCliente(c);
+    		petfera.inserirFuncionario(f);
     	}
-    	clienteStage.close();
+    	tratador.close();
 
     }
 

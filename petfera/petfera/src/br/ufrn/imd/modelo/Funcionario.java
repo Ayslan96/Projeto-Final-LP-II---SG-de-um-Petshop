@@ -7,7 +7,7 @@ public class Funcionario {
 	String cpf;
 	int idade;
 	String tipoSanguineo;
-	char fatorRH;
+	String fatorRH;
 	String especialidade;
 	
 	
@@ -41,10 +41,10 @@ public class Funcionario {
 	public void setTipoSanguineo(String tipoSanguineo) {
 		this.tipoSanguineo = tipoSanguineo;
 	}
-	public char getFatorRH() {
+	public String getFatorRH() {
 		return fatorRH;
 	}
-	public void setFatorRH(char fatorRH) {
+	public void setFatorRH(String fatorRH) {
 		this.fatorRH = fatorRH;
 	}
 	public String getEspecialidade() {

@@ -5,11 +5,11 @@ public abstract class Animal implements AcaoComum{
 	int id;
 	String classe;
 	String nomeCientifico;
-	char sexo;
+	String sexo;
 	double tamanho;
 	String dieta;
-	Veterinario veterinario;
-	Tratador tratador;
+	String veterinario;
+	String tratador;
 	String nomeBatismo;
 	String autorizacaoIbama;
 	
@@ -31,10 +31,10 @@ public abstract class Animal implements AcaoComum{
 	public void setNomeCientifico(String nomeCientifico) {
 		this.nomeCientifico = nomeCientifico;
 	}
-	public char getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
-	public void setSexo(char sexo) {
+	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
 	public double getTamanho() {
@@ -49,16 +49,16 @@ public abstract class Animal implements AcaoComum{
 	public void setDieta(String dieta) {
 		this.dieta = dieta;
 	}
-	public Veterinario getVeterinario() {
+	public String getVeterinario() {
 		return veterinario;
 	}
-	public void setVeterinario(Veterinario veterinario) {
+	public void setVeterinario(String veterinario) {
 		this.veterinario = veterinario;
 	}
-	public Tratador getTratador() {
+	public String getTratador() {
 		return tratador;
 	}
-	public void setTratador(Tratador tratador) {
+	public void setTratador(String tratador) {
 		this.tratador = tratador;
 	}
 	public String getNomeBatismo() {

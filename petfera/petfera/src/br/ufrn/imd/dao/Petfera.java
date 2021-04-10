@@ -46,7 +46,7 @@ public class Petfera {
 		return tamanho;
 	}
 
-	public String listarClientes() {
+	public String listarFuncionarios() {
 		String S = "\n\n### Lista de Funcionarios ###\n";
 		for (Funcionario f : funcionarios) {
 				S += "Nome..: " + f.getNome() + "\n"+ 

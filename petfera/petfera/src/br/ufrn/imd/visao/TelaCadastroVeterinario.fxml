@@ -35,14 +35,14 @@
             <Label text="Fator RH" GridPane.rowIndex="5" />
             <Label text="Especialidade" GridPane.rowIndex="6" />
             <Label text="CNMV" GridPane.rowIndex="7" />
-            <TextField GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tId" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="tNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tCpf" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tIdade" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tSangue" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tRh" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tEspecialidade" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tCnmv" GridPane.columnIndex="1" GridPane.rowIndex="7" />
          </children>
       </GridPane>
       <Button fx:id="btnSair" cancelButton="true" layoutX="389.0" layoutY="334.0" mnemonicParsing="false" onAction="#fecharApp" text="Sair" />
