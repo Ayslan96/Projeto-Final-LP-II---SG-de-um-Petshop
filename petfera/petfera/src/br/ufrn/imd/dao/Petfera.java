@@ -49,9 +49,7 @@ public class Petfera {
 	public String listarFuncionarios() {
 		String S = "\n\n### Lista de Funcionarios ###\n";
 		for (Funcionario f : funcionarios) {
-				S += "Nome..: " + f.getNome() + "\n"+ 
-						"cpf...: " + f.getCpf() + "\n";	
-				S += "\n############################################\n\n";
+				S += f.toString();
 			}	
 		return S;	
 	}
@@ -63,13 +61,11 @@ public class Petfera {
 
 	public String listarAnimais() {
 		
-		String S = "\n\n### Animais ###\n";
+		String S = "\n\n### Lista de Animais ###\n";
 		
 		for(Animal a: animais) {
-			S += "Nome..: " + a.getNomeBatismo() + "\n";	
-			S += "\n############################################\n\n";
+			S += a.toString();	
 		}
-		
 		return S;
 	}
 

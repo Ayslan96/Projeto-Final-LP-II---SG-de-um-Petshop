@@ -16,7 +16,7 @@ public class Veterinario extends Funcionario{
 	public String toString() {
 		return "##############################################"+"\nNome: " + this.getNome() + "\nId: " + this.getId() + "\nCNMV: "+ this.getCnmv() +"\nEspecialidade: "
 				+ this.getEspecialidade() +"\nCPF: "+ this.getCpf() + "\nTipo Sanguíneo: "+ this.getTipoSanguineo()
-				+ "\nFator RH: " + this.getFatorRH() + "\nIdade: "+ this.getId() + "\n##############################################";
+				+ "\nFator RH: " + this.getFatorRH() + "\nIdade: "+ this.getIdade() + "\n##############################################";
 	}
 	
 }
