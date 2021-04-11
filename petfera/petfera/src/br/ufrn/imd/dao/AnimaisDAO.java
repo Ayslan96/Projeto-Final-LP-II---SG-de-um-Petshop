@@ -22,8 +22,7 @@ public class AnimaisDAO {
 		String S = "\n\n### Animais ###\n";
 		
 		for(Animal a: animais) {
-			S += "Nome..: " + a.getNomeBatismo() + "\n";	
-			S += "\n############################################\n\n";
+			S = a.toString();
 		}
 		
 		return S;

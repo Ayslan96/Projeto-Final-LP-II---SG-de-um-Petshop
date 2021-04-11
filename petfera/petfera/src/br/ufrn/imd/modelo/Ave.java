@@ -4,6 +4,7 @@ public class Ave extends Animal{
 	
 	double tamanhoDoBico;
 	double envergaduraDasAsas;
+	
 	public double getTamanhoDoBico() {
 		return tamanhoDoBico;
 	}

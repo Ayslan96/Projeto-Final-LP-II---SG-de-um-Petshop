@@ -12,6 +12,12 @@ public class Tratador extends Funcionario {
 		this.nivelDeSegurança = nivelDeSegurança;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "##############################################"+"\nNome: " + this.getNome() + "\nId: " 
+	            + this.getId() + "\nNivel de Segurança: "+ this.getNivelDeSegurança() +"\nEspecialidade: "
+				+ this.getEspecialidade() +"\nCPF: "+ this.getCpf() + "\nTipo Sanguíneo: "+ this.getTipoSanguineo()
+				+ "\nFator RH: " + this.getFatorRH() + "\nIdade: "+ this.getId() + "\n##############################################";
+	}
 
 }

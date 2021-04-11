@@ -21,9 +21,7 @@ public class FuncionariosDAO {
 		
 		String S = "\n\n### Lista de Funcionarios ###\n";
 		for (Funcionario f : funcionarios) {
-				S += "Nome..: " + f.getNome() + "\n"+ 
-						"cpf...: " + f.getCpf() + "\n";	
-				S += "\n############################################\n\n";
+			  S = f.toString();
 			}
 		
 		return S;	
